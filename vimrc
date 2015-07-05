@@ -14,6 +14,10 @@ runtime! archlinux.vim
 " Or better yet, read /usr/share/vim/vim74/vimrc_example.vim or the vim manual
 " and configure vim to your own liking!
 
+" Pathogen for plugin mgmt
+" Unpack plugins in bundle folder (or clone)
+call pathogen#infect()
+
 " Automatic reloading of .vimrc on :w
 autocmd! bufwritepost .vimrc source %
 
@@ -114,10 +118,6 @@ set foldmethod=syntax
 " by pressing i
 set virtualedit=block,onemore
 
-
-" Pathogen for plugin mgmt
-" Unpack plugins in bundle folder (or clone)
-call pathogen#infect()
 
 " Setting for vim-powerline
 " cd ~/.vim/bundle
