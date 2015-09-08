@@ -118,6 +118,9 @@ set foldmethod=syntax
 " by pressing i
 set virtualedit=block,onemore
 
+" #########################################################
+" Plugin configurations
+" #########################################################
 
 " Setting for vim-powerline
 " cd ~/.vim/bundle
