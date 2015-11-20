@@ -118,24 +118,31 @@ set foldmethod=syntax
 " by pressing i
 set virtualedit=block,onemore
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugins                                                                     "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" To enable pathogen:
+" mkdir -p ~/.vim/autoload ~/.vim/bundle
+" curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
-" Setting for vim-powerline
-" cd ~/.vim/bundle
-" git clone git://github.com/Lokaltog/vim-powerline.git
+
+""""" vim-airline
+" git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+" :Helptags
+"
 set laststatus=2
-"set encoding=utf-8
-"set fillchars+=stl:\ ,stlnc:\
-let g:Powerline_symbols = 'fancy'
-ret g:Powerline_dividers_override = ['', '', '', '']
-let g:Powerline_symbols_override = { 'BRANCH': '', 'LINE': '', 'RO': '' }
+let g:airline_powerline_fonts = 1
 
-" Python mode
-" cd ~/.vim/bundle
-" git clone git://github.com/klen/python-mode
+""""" Python mode
+" cd " git clone git://github.com/klen/python-mode ~/.vim/bundle/python-mode
 
-" CrtlP
-" cd ~/.vim/bundle
-" git clone https://github.com/kien/ctrlp.vim.git
+let g:pymode_rope = 1
 
-" Python folding
+""""" CrtlP
+" git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle
+
+""""" Python folding
 set nofoldenable
+
+""""" AutomaticTexPlugin
+let g:atp_Compiler='bash'
