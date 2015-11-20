@@ -118,9 +118,10 @@ set foldmethod=syntax
 " by pressing i
 set virtualedit=block,onemore
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugins                                                                     "
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+                                                          "
+" #########################################################
+" Plugin configurations
+" #########################################################
 " To enable pathogen:
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
 " curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
