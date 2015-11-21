@@ -135,12 +135,12 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 
 """"" Python mode
-" cd " git clone git://github.com/klen/python-mode ~/.vim/bundle/python-mode
+" git clone git://github.com/klen/python-mode ~/.vim/bundle/python-mode
 
 let g:pymode_rope = 1
 
 """"" CrtlP
-" git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle
+" git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp
 
 """"" Python folding
 set nofoldenable
