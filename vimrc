@@ -145,5 +145,24 @@ let g:pymode_rope = 1
 """"" Python folding
 set nofoldenable
 
+""""" NERDtree
+" git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+" git clone https://github.com/jistr/vim-nerdtree-tabs.git ~/.vim/bundle/vim-nerdtree-tabs
+" :Helptags
+"
+" open with :NERDTreeTabsToggle
+
+cnoreabbrev nt NERDTreeTabsToggle
+
+" Open files in new tab. This requires to add the following line to
+" .vim/bundle/nerdtree/autoload/nerdtree/ui/glue.vim in line 72 (after enter is
+" mapped to open in tab
+"call NERDTreeAddKeyMap({ 'key': g:NERDTreeMapOpenInTab, 'scope': "DirNode", 'callback': s."activateDirNode" })
+"let NERDTreeMapOpenInTab='<ENTER>'
+"let g:NERDTreeMapOpenInTab = '<2-LeftMouse>'
+
+" Open in nes tab with middle mouse button
+let g:NERDTreeMapOpenInTab = '<MiddleMouse>'
+
 """"" AutomaticTexPlugin
 let g:atp_Compiler='bash'
