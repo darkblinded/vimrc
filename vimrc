@@ -67,15 +67,14 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 " Show trailing whitespace and spaces before a tab:
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 
-" Wombat color scheme
+""""" Wombat color scheme
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 
 "color wombat256mod
 
-" Solarized color scheme
-" cd ~/.vim/bundle
-" git clone git://github.com/altercation/vim-colors-solarized.git
+""""" Solarized color scheme
+" git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
 
 "set background=light "solarized-light
 "set background=dark  "solarized-dark
